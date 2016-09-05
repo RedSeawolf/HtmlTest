@@ -1,0 +1,12 @@
+.item{
+	list-style-type : none;
+	width : 200px;
+	height : 25px;
+	background : #ccc;
+	padding : 20px;
+}
+
+.selected{
+	background:#4cffff;
+	color:#ffffff;
+}
