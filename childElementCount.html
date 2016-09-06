@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head >
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+<title >childElementCount</title >
+	<script type="application/javascript">
+       function t(){
+	       /*var getElementTag = document.getElementsByTagName("html")[0];
+	       var displayElementCount=getElementTag.childElementCount;
+	      alert(displayElementCount);*/
+
+	       var childElementCount=document.getElementsByTagName("ul")[0].childElementCount;
+	       alert(childElementCount);//得到的是ul中的子元素li的个数为6不包括em元素，因为em是文本节点
+       }
+	</script>
+</head >
+<body >
+    <p ><em>这是一个段落</em></p >
+    <ul >
+    	<li ><em>item1</em></li >
+    	<li >item2</li >
+    	<li >item3</li >
+    	<li >item4</li >
+    	<li >item5</li >
+    	<li >item6</li >
+    	</ul >
+    <input type="button"  value="elementCount" onclick="t()" />
+</body >
+</html >
