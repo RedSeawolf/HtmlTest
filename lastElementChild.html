@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head >
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+<title >lastElementChild</title >
+	<script type="text/javascript">
+		function t1(){
+			 var getElement=document.getElementsByTagName("body")[0].lastElementChild;
+			 alert(getElement);
+		}
+
+		function t2(){
+			var getElement1=document.getElementsByTagName("body")[0 ].previousElementSibling;
+			alert(getElement1);
+		}
+
+		function t3(){
+			var getElement2=document.getElementsByTagName("body")[0].nextElementSibling;
+			alert(getElement2);
+		}
+	</script>
+</head >
+<body >
+       <p >这是一个段落</p >
+       <div >
+       	<ul >
+       	<li >item1</li >
+       	<li >item2</li >
+       	<li >item3</li >
+       	<li >item4</li >
+       	<li >item5</li >
+       	<li >item6</li >
+       	</ul >
+       	</div >
+<input type="button" value="lastElementChild" onclick="t1()" />
+<input type="button"  value="previousElementSibling" onclick="t2()"/>
+<input type="button"  value="nextElementSibling"    onclick="t3()"/>
+ </body >
+</html >
