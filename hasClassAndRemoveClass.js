@@ -6,4 +6,6 @@ $(document).ready(function(){
     $("button").click(function(){
      $("#home").removeClass("selected");
   });
+    var itemClass=$("ul").hasClass("item");
+    alert(itemClass);
 });
